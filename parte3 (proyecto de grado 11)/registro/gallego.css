@@ -1,0 +1,154 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    color: #18171c;
+}
+
+a{
+    color: #01f874;
+    text-decoration: none;
+}
+
+a:active{
+    color: #01f874;
+}
+
+
+body {
+    box-sizing: border-box;
+    display:  flex;
+    justify-content: center;
+    align-items:  center;
+    min-height: 100vh;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1017%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(246%2c 246%2c 246%2c 1)'%3e%3c/rect%3e%3cpath d='M1512 560L0 560 L0 390.57Q53.75 324.32%2c 120 378.07Q174.77 312.84%2c 240 367.61Q265.99 321.6%2c 312 347.59Q360.22 275.81%2c 432 324.03Q490.39 310.42%2c 504 368.81Q509.72 302.53%2c 576 308.26Q642.62 254.88%2c 696 321.49Q743.33 296.82%2c 768 344.15Q843.4 299.55%2c 888 374.96Q915.62 282.57%2c 1008 310.19Q1087.58 269.77%2c 1128 349.35Q1180.23 281.58%2c 1248 333.81Q1298.26 264.06%2c 1368 314.32Q1423.21 297.53%2c 1440 352.74Q1484.31 325.05%2c 1512 369.36z' fill='rgba(58%2c 181%2c 243%2c 0.35)'%3e%3c/path%3e%3cpath d='M1464 560L0 560 L0 433.93Q58.26 372.19%2c 120 430.45Q140.87 379.32%2c 192 400.19Q260.28 348.47%2c 312 416.75Q350.09 334.84%2c 432 372.93Q478.1 347.03%2c 504 393.14Q580.96 350.1%2c 624 427.06Q674.51 357.57%2c 744 408.08Q789.37 333.44%2c 864 378.81Q952.15 346.96%2c 984 435.1Q999.65 378.75%2c 1056 394.4Q1098.4 364.8%2c 1128 407.21Q1186.12 393.32%2c 1200 451.44Q1201.58 381.01%2c 1272 382.59Q1338.3 328.89%2c 1392 395.19Q1458.21 389.4%2c 1464 455.61z' fill='rgba(58%2c 181%2c 243%2c 0.61)'%3e%3c/path%3e%3cpath d='M1560 560L0 560 L0 476.49Q41.25 397.74%2c 120 438.98Q203.8 402.78%2c 240 486.58Q282.68 457.25%2c 312 499.93Q338.3 406.23%2c 432 432.53Q501.78 382.31%2c 552 452.09Q613.43 441.52%2c 624 502.95Q643.79 450.74%2c 696 470.52Q749.97 404.49%2c 816 458.45Q883.05 453.5%2c 888 520.54Q940.05 452.59%2c 1008 504.63Q1051.12 427.75%2c 1128 470.86Q1210.26 433.12%2c 1248 515.38Q1278.24 425.62%2c 1368 455.85Q1417.21 433.06%2c 1440 482.28Q1515.66 437.94%2c 1560 513.6z' fill='rgba(58%2c 181%2c 243%2c 0.72)'%3e%3c/path%3e%3cpath d='M1464 560L0 560 L0 573.95Q11.05 513%2c 72 524.05Q101.09 481.14%2c 144 510.23Q202.38 496.61%2c 216 554.99Q246.45 465.44%2c 336 495.9Q406.97 446.87%2c 456 517.84Q510.04 451.88%2c 576 505.92Q662.02 471.94%2c 696 557.96Q739.03 480.99%2c 816 524.02Q862.43 498.45%2c 888 544.89Q901.26 486.15%2c 960 499.42Q1037.42 456.85%2c 1080 534.27Q1139.91 522.18%2c 1152 582.09Q1180.23 538.33%2c 1224 566.56Q1272.04 494.6%2c 1344 542.64Q1397.6 476.24%2c 1464 529.84z' fill='rgba(58%2c 181%2c 243%2c 0.94)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1017'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#wave{
+    bottom: 0;
+    position: absolute;
+}
+
+#cont{
+    margin-left: -350px;
+    margin-top: -230px;
+}
+
+#key{
+    background: red;
+}
+
+form{
+    width: 390px;
+    height: 580px;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 800px;
+    margin-top: -180px;
+    transition: .5s;
+    border:2px solid #18171c;
+    background: gba(255, 255, 255, .25);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+}
+
+
+/* toodos los inputs del formulario */
+
+input{
+    background: transparent;
+    border-width: 0 0 0.1rem;
+    border-color: #fff;
+    border-style: solid;
+    color: #01f874;
+    margin-left: 20px;
+    width: 90%;
+    font-size: 20px;
+    outline: none;
+}
+
+
+#key{
+    margin-left: -270px;
+    margin-top: -18px;
+}
+
+#c5{
+    height: 30px;
+    width: 300px;
+    background: transparent;
+    border: 2px solid darkslateblue;
+}
+
+select{
+    background: transparent;
+    border: 2px solid darkslateblue;
+    height: 30px;
+    width: 300px;
+}
+
+option{
+    background: transparent;
+    border: 2px solid darkslateblue;
+}
+form-select select{
+    background: transparent;
+}
+
+#s1{
+    background: transparent;
+}
+
+
+/* aqui va todo lo del boton */
+
+
+#btn{
+
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    background: transparent;
+    font-size: 20px;
+    border: 0;
+    transition: .5s;
+}
+
+#btn:hover{
+    border: 1px solid #18171c;
+    background: transparent;
+    color: #01f874;
+}
+
+
+.sun{
+    width: 600px;
+    height: 400px;
+    border-radius: 50%;
+    background: #ffff66;
+    filter: blur(15px);
+    margin-left: 1300px;
+    margin-top: -520px;
+}
+
+#msgf{
+    margin-top: -25px;
+}
+
+@media screen and (max-width: 768px) {
+
+    form{
+        transform: translateX(-170px);
+    }
+    
+}
