@@ -1,0 +1,41 @@
+body{
+  background: #f6f6f6;
+  overflow-y: hidden;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.content{
+  width: 300px;
+  color: #18171c;
+  margin-left: 90px;
+  margin-top: 50px;
+}
+
+.blob{
+  margin-top: -510px;
+  margin-left: 420px;
+}
+
+.img{
+  margin-top: -650px;
+  margin-left: 500px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  body{
+    overflow-x: hidden;
+  }
+
+  .content{
+    transform: translateY(100px);
+    margin-left: 40px;
+    width: 450px;
+  }
+  
+}

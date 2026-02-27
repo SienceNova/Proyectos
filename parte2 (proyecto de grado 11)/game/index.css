@@ -1,0 +1,226 @@
+body{
+    background-color: #100a29;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: 'Press Start 2p',  cursive;
+    color: #fff;
+}
+
+
+
+/*en esta parte va todo lo relacionado con texto:*/
+
+/* --------------------- */
+
+.text{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 100px;
+    font-size: 25px;
+    border: 2px solid;
+    border-image: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        #fff 10px,
+        #fff 30px
+
+    ) 1;
+    transform: translateY(110px);
+}
+
+.row{
+    font-size: 60px;
+    margin-left: 300px;
+    transform: translateY(-50px);
+}
+
+
+
+
+
+
+.text3{
+
+    width: 400px;
+    margin-left: 1000px;
+    transform: translateY(-150px) ;
+    border: 2px solid;
+    border-image: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        #fff 10px,
+        #fff 30px
+
+    ) 1;
+}
+
+/* --------------------- */
+
+
+
+
+
+/* camara de seguimiento */
+
+
+
+
+/* aqui van todos los suelos utilizados en el juego */
+/* ----------------- */
+
+
+.suelo{
+    display: flex;
+    bottom: -100px;
+    position: fixed;
+}
+
+.grass1{
+    margin-left: -50px;
+}
+
+
+
+.grass2{
+    margin-left: -128px;
+}
+
+
+.grass3{
+    margin-left: -128px;
+}
+
+.grass4{
+    margin-left: -128px;
+}
+.grass5{
+    margin-left: -128px;
+}
+.grass6{
+    margin-left: -128px;
+}
+.grass7{
+    margin-left: -128px;
+}
+.grass8{
+    margin-left: -128px;
+}
+.grass9{
+    margin-left: -128px;
+}
+.grass10{
+    margin-left: -128px;
+}
+
+/* ----------------- */
+
+
+
+/* en esta aprte va todo lo que son personajes secundarios */
+
+
+/* mico jose */
+
+.mico-jose{
+    margin-left: 2000px;
+    transform: translateY(-250px);
+    height: 600px;
+    width: 400px;
+    background-image: url("/imgs/gorila.png");
+    background-repeat: no-repeat;
+    background-size:250px;
+}
+
+
+
+/*------*/
+
+
+
+/* de aqui para abajo esta todo lo que es el personaje del juego
+    es un pelado bien lindo como los qeu hicieron este proyecto
+*/
+
+.move{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 280px;
+    position: absolute;
+    z-index: 10;
+}
+
+.personaje{
+    width: 130px;
+    height: 200px;
+    margin-left: -550px;
+    background-image: url("/imgs/static.png");
+    background-repeat: no-repeat;
+    
+}
+
+
+.movement{
+    animation: change 0.8s steps(1) infinite;
+}
+
+
+/*--animacion par al aparte izquirda--*/
+
+
+.left{
+    width: 130px;
+    height: 200px;
+    margin-left: -550px;
+    background-image: url("/imgs/static2.png");
+    background-repeat: no-repeat;
+    animation: change2 0.8s steps(1) infinite;
+}
+
+
+
+
+/* animaciones de los ersonajes etc: */
+
+@keyframes change{
+
+    0%{
+        background-image: url("/imgs/static.png");
+    }
+    33.3%{
+        background-image: url("/imgs/move2.png");
+    }
+    66.6%{
+        background-image: url("/imgs/move1.png");
+    }
+    100%{
+        background-image: url("/imgs/move2.png");
+    }
+
+
+}
+
+
+@keyframes change2{
+    0%{
+        background-image: url("/imgs/static2.png");
+    }
+    33.3%{
+        background-image: url("/imgs/move1i.png");
+    }
+    66.6%{
+        background-image: url("/imgs/move2i.png");
+    }
+    100%{
+        background-image: url("/imgs/move1i.png");
+    }
+}
